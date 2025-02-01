@@ -19,7 +19,7 @@ const Footer = () => (
       </div>
 
       {/* Our Technologies */}
-      <div className="md:col-span-3 lg:col-span-2 text-center md:text-left">
+      <div className="md:col-span-3 lg:col-span-2 text-center sm:text-left">
         <h2 className="font-semibold mb-2">Our Technologies</h2>
         <ul className="text-sm space-y-1 cursor-pointer">
           <li className="hover:text-secondary">ReactJS</li>
@@ -30,7 +30,7 @@ const Footer = () => (
       </div>
 
       {/* Our Services */}
-      <div className="md:col-span-3 lg:col-span-2 text-center md:text-left">
+      <div className="md:col-span-3 lg:col-span-2 text-center sm:text-left">
         <h2 className="font-semibold mb-2">Our Services</h2>
         <ul className="text-sm space-y-1 cursor-pointer">
           <li className="hover:text-secondary">Social Media Marketing</li>

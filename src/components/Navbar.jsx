@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to track menu visibility
 
   return (
-    <nav className="bg-primary px-10 py-4 flex justify-between items-center text-white relative z-10">
+    <nav className="bg-primary px-12 py-4 flex justify-between items-center text-white relative z-10">
       {/* Logo */}
       <img
         src={Logo}
@@ -32,7 +32,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Toggle Button */}
       <button
-        className={`md:hidden text-2xl focus:outline-none z-20 ${
+        className={`md:hidden text-2xl focus:outline-none overflow-y-hidden z-20 ${
           isOpen ? "text-black" : "text-white"
         }`}
         onClick={() => setIsOpen(!isOpen)}
@@ -42,7 +42,7 @@ const Navbar = () => {
 
       {/* Overlay Menu */}
       <div
-        className={`fixed inset-0 bg-white text-black flex flex-col items-start px-15 py-20 space-y-5 transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-white text-black flex flex-col items-start px-15 py-15 space-y-5 transition-transform duration-300 ease-in-out gap-4 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
