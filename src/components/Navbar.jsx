@@ -9,20 +9,33 @@ const Navbar = () => {
         alt="logo"
         className="w-[226px] h-[49.62px] cursor-pointer"
       />
-      <ul className="flex space-x-10 cursor-pointer gap-4">
-        <li className="hover:text-secondary hover:drop-shadow-l p-2 rounded">
+
+      <div className="flex space-x-10 cursor-pointer gap-4">
+        <a
+          href="#"
+          className="hover:text-secondary hover:drop-shadow-l p-2 rounded"
+        >
           Services
-        </li>
-        <li className="hover:text-secondary hover:drop-shadow-l p-2 rounded">
+        </a>
+        <a
+          href="#"
+          className="hover:text-secondary hover:drop-shadow-l p-2 rounded"
+        >
           About Us
-        </li>
-        <li className="hover:text-secondary hover:drop-shadow-l p-2 rounded">
+        </a>
+        <a
+          href="#"
+          className="hover:text-secondary hover:drop-shadow-l p-2 rounded"
+        >
           Contact Us
-        </li>
-        <li className="hover:text-secondary hover:drop-shadow-l p-2 rounded">
+        </a>
+        <a
+          href="#"
+          className="hover:text-secondary hover:drop-shadow-l p-2 rounded"
+        >
           Careers
-        </li>
-      </ul>
+        </a>
+      </div>
     </nav>
   );
 };

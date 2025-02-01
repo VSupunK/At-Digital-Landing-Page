@@ -18,11 +18,11 @@ const HeroSection = () => {
         {/* Hero Content */}
         <div
           className="bg-gradient-to-r from-[#1E90FF] to-[#00C896] text-white 
-                 p-6 md:px-12 max-w-lg w-full md:w-2/5 
+                 p-6 md:px-12 max-w-lg w-2/5 
                  md:absolute md:bottom-12 md:left-12"
         >
           <h1
-            className="text-2xl md:text-5xl sm:text-lg font-bold leading-tight mb-5 
+            className="lg:text-5xl md:text-3xl font-bold leading-tight mb-5 
                      text-wrap text-center md:text-left overflow-hidden"
           >
             We Crush Your Competitors, Goals, And Sales Records - Without The
@@ -40,8 +40,8 @@ const HeroSection = () => {
              p-6 md:px-12 w-full md:bottom-12 md:left-12 md:hidden"
       >
         <h1
-          className="text-2xl md:text-5xl sm:text-lg font-bold leading-tight mb-5 
-                 text-wrap text-center md:text-left o"
+          className="sm:text-3xl font-bold leading-tight mb-5 
+                 text-wrap text-center md:text-left"
         >
           We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
         </h1>

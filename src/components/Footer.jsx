@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../assets/images/Logo.png";
 
 const Footer = () => (
-  <footer className="bg-primary text-white px-6 py-10 mt-10">
+  <footer className="bg-primary text-white px-12 py-10 mt-10">
     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
       {/* Logo and Description */}
       <div className="md:col-span-6 lg:col-span-8 text-center md:text-left">
@@ -11,7 +11,7 @@ const Footer = () => (
           alt="logo"
           className="w-[180px] md:w-[226px] h-auto mx-auto md:mx-0 cursor-pointer"
         />
-        <p className="text-sm max-w-md mx-auto md:mx-0 mt-3">
+        <p className="text-sm max-w-md mx-auto md:mx-0 mt-3 w-2xl">
           Your goal is our target. Not anything in between. We use online
           marketing platforms and tools to achieve a single objective – your
           business results.
