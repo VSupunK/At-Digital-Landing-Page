@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi"; // Import icons for menu toggle
+import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to track menu visibility
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-primary px-12 py-4 flex justify-between items-center text-white relative z-10">
@@ -15,8 +15,8 @@ const Navbar = () => {
       />
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex space-x-10 max-sm:space-x-16 cursor-pointer">
-        <a href="#" className="hover:text-secondary p-2 rounded">
+      <div className="hidden md:flex text-xl space-x-10 cursor-pointer uppercase">
+        <a href="#services" className="hover:text-secondary p-2 rounded">
           Services
         </a>
         <a href="#" className="hover:text-secondary p-2 rounded">
@@ -32,23 +32,29 @@ const Navbar = () => {
 
       {/* Mobile Menu Toggle Button */}
       <button
-        className={`md:hidden text-2xl focus:outline-none overflow-y-hidden z-20 ${
-          isOpen ? "text-black" : "text-white"
-        }`}
+        className="md:hidden text-2xl focus:outline-none z-20 relative"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <FiX /> : <FiMenu />}
+        {isOpen ? <FiX className="hidden" /> : <FiMenu />}
       </button>
 
       {/* Overlay Menu */}
       <div
-        className={`fixed inset-0 bg-white text-black flex flex-col items-start px-15 py-15 space-y-5 transition-transform duration-300 ease-in-out gap-4 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-0 bg-white text-black flex flex-col px-10 py-15 space-y-5 transition-transform duration-300 ease-in-out gap-4 z-50
+          ${isOpen ? "translate-x-0" : "translate-x-full"}
+        `}
       >
+        {/* Close Button (Fixed) */}
+        <button
+          className="absolute top-5 right-5 text-3xl text-black z-50"
+          onClick={() => setIsOpen(false)}
+        >
+          <FiX />
+        </button>
+
         <a
-          href="#"
-          className="text-2xl  hover:text-secondary"
+          href="#services"
+          className="text-2xl hover:text-secondary"
           onClick={() => setIsOpen(false)}
         >
           Services

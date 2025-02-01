@@ -5,7 +5,7 @@ import Image_2 from "../assets/images/Search.png";
 
 const Sections = () => {
   return (
-    <div className="lg:px-20 bg-white">
+    <div id="services" className="lg:px-20 bg-white">
       <SectionItem
         image={Image_1}
         title={"Web & Mobile App Development"}

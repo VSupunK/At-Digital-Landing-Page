@@ -14,7 +14,7 @@
   --breakpoint-sm: 375px;
 
 
-     /* 🎨 Custom Colors from Your Palette */
+  /* Custom Colors from Your Palette */
   --color-primary: rgb(92, 74, 217); /* Bluish Purple */
   --color-secondary: rgb(242, 141, 53); /* Yuzu Jam */
   --color-analogous-1: rgb(119, 89, 237); /* Ice Ice Baby */
@@ -24,7 +24,7 @@
 
   /* Text Colors */
   --color-text: rgb(36, 36, 36); /* Tricorn Black */
-  --color-text-light: rgb(156, 144, 145); /* Acier */
+  --color-text-light: rgb(111, 108, 144); /* Acier */
   --color-text-subtle: rgb(156, 144, 145); /* Acier */
 
   /* Accent Colors */

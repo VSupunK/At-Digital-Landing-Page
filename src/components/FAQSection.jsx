@@ -2,8 +2,8 @@ import React from "react";
 import FAQItem from "./FAQItem";
 
 const FAQSection = () => (
-  <div className="p-6 space-y-5 px-12">
-    <h1 className="text-4xl sm:text-2xl font-bold text-center text-primary overflow-hidden pb-2">
+  <div className="p-6 min-xl:px-36 px-12 space-y-5">
+    <h1 className="text-4xl max-md:text-2xl font-bold text-center text-primary overflow-hidden pb-2">
       Frequently asked questions
     </h1>
     <FAQItem

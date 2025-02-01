@@ -11,10 +11,12 @@ const FAQItem = ({ question, answer }) => {
         }`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <p className="font-semibold sm:text-lg">{question}</p>
-        <span className="p-2">{isOpen ? "-" : "+"}</span>
+        <p className="font-semibold max-sm:text-sm text-xl">{question}</p>
+        <span className="p-2 text-3xl transition">{isOpen ? "-" : "+"}</span>
       </div>
-      {isOpen && <p className="mt-2 text-dark"> {answer}</p>}
+      {isOpen && (
+        <p className="mt-2 max-sm:text-sm text-xl text-text-light"> {answer}</p>
+      )}
     </div>
   );
 };

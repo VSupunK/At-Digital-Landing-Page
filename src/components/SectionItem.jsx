@@ -4,14 +4,14 @@ import Button from "./Button";
 const SectionItem = ({ image, title, description, reverse }) => {
   return (
     <section
-      className={`flex flex-col sm:flex-row items-center justify-center px-6 gap-4 text-center sm:text-left
-        ${reverse ? "sm:flex-row-reverse" : "sm:flex-row"}`}
+      className={`flex flex-col md:flex-row items-center justify-center px-12 gap-2 md:gap-6 md:py-10 xl:py-5 text-center sm:text-left
+        ${reverse ? "md:flex-row-reverse" : "md:flex-row"}`}
     >
       <div className="md:w-2/5">
         <img
           src={image}
           alt="section image"
-          className="sm:w-full sm:h-auto justify-center items-center"
+          className="max-sm:w-2xs sm:w-full h-auto justify-center items-center"
         />
       </div>
 
@@ -19,7 +19,9 @@ const SectionItem = ({ image, title, description, reverse }) => {
         <h1 className="text-3xl max-md:text-2xl pb-2 font-bold overflow-hidden text-primary">
           {title}
         </h1>
-        <p className="text-xl max-md:text-lg md:text-left">{description}</p>
+        <p className="max-sm:text-sm text-xl max-md:text-lg md:text-left">
+          {description}
+        </p>
         <Button label={"Learn More"} />
       </div>
     </section>
