@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@theme {
+     /* 🎨 Custom Colors from Your Palette */
+  --color-primary: rgb(92, 74, 217); /* Bluish Purple */
+  --color-secondary: rgb(234, 134, 52); /* Yuzu Jam */
+  --color-analogous-1: rgb(119, 89, 237); /* Ice Ice Baby */
+  --color-analogous-2: rgb(85, 80, 218); /* Rich Blue */
+  --color-triadic: rgb(104, 49, 235); /* Electric Indigo */
+  --color-dark: rgb(47, 47, 88); /* Interstellar Blue */
+
+  /* Text Colors */
+  --color-text: rgb(36, 36, 36); /* Tricorn Black */
+  --color-text-light: rgb(156, 144, 145); /* Acier */
+  --color-text-subtle: rgb(156, 144, 145); /* Acier */
+
+  /* Accent Colors */
+  --color-accent-white: rgb(226, 239, 254); /* Wizard White */
+  --color-accent-cream: rgb(255, 248, 224); /* Cuddly Yarn */
+
+  /* Utility Colors */
+  --color-error: rgb(255, 0, 0); /* Hornet Sting */
+  --color-success: rgb(0, 200, 83); /* Frog */
+}
