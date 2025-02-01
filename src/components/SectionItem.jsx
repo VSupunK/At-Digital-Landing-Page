@@ -1,14 +1,17 @@
 import React from "react";
 import Button from "./Button";
 
-const SectionItem = ({ image, title, description }) => {
+const SectionItem = ({ image, title, description, reverse }) => {
   return (
-    <section className="flex flex-col md:flex-row sm:text-center sm:items-center sm:justify-center p-6 gap-4 md:px-12">
+    <section
+      className={`flex flex-col sm:flex-row items-center justify-center px-6 gap-4 text-center sm:text-left
+        ${reverse ? "sm:flex-row-reverse" : "sm:flex-row"}`}
+    >
       <div className="md:w-2/5">
         <img
           src={image}
           alt="section image"
-          className="sm:w-[275px] sm:h-auto justify-center items-center"
+          className="sm:w-full sm:h-auto justify-center items-center"
         />
       </div>
 

@@ -15,7 +15,7 @@ const Navbar = () => {
       />
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex space-x-10 cursor-pointer gap-4">
+      <div className="hidden md:flex space-x-10 max-sm:space-x-16 cursor-pointer">
         <a href="#" className="hover:text-secondary p-2 rounded">
           Services
         </a>

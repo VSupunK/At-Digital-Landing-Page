@@ -5,13 +5,14 @@ import Image_2 from "../assets/images/Search.png";
 
 const Sections = () => {
   return (
-    <div className="lg:px-20 bg-amber-100">
+    <div className="lg:px-20 bg-white">
       <SectionItem
         image={Image_1}
         title={"Web & Mobile App Development"}
         description={
           "Your web and mobile Apps are pieces of the puzzle to grow your business. We use frameworks which tailor content and engagement methods to respond to different intents shown by your potential customers who interact with your business online."
         }
+        reverse={false}
       />
 
       <SectionItem
@@ -20,6 +21,7 @@ const Sections = () => {
         description={
           "Your digital strategy should complement the overall marketing strategy of the company. In online marketing, each component will never work in isolation and every business needs a different mix. We provide a clear concept and strategic overview to find the most efficient model for your business."
         }
+        reverse={true}
       />
     </div>
   );
