@@ -1,25 +1,55 @@
 import React from "react";
 import HeroImage from "../assets/images/Hero image.jpeg";
 import Button from "./Button";
-import HeroContent from "./HeroContent";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen flex items-center">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src={HeroImage}
-          alt="Hero Background"
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <>
+      <section className="relative w-full h-screen flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src={HeroImage}
+            alt="Hero Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-      {/* Hero Content */}
-      <div className="relative w-full h-full flex items-center justify-center">
-        <HeroContent />
+        {/* Hero Content */}
+        <div
+          className="bg-gradient-to-r from-[#1E90FF] to-[#00C896] text-white 
+                 p-6 md:px-12 max-w-lg w-full md:w-2/5 
+                 md:absolute md:bottom-12 md:left-12"
+        >
+          <h1
+            className="text-2xl md:text-5xl sm:text-lg font-bold leading-tight mb-5 
+                     text-wrap text-center md:text-left overflow-hidden"
+          >
+            We Crush Your Competitors, Goals, And Sales Records - Without The
+            B.S.
+          </h1>
+          <div className="flex justify-center md:justify-start">
+            <Button label={"Get free consultation"} />
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Content - Media{768px}*/}
+      <div
+        className="bg-gradient-to-r from-[#1E90FF] to-[#00C896] text-white 
+             p-6 md:px-12 w-full md:bottom-12 md:left-12 md:hidden"
+      >
+        <h1
+          className="text-2xl md:text-5xl sm:text-lg font-bold leading-tight mb-5 
+                 text-wrap text-center md:text-left o"
+        >
+          We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
+        </h1>
+        <div className="flex justify-center md:justify-start">
+          <Button label={"Get free consultation"} />
+        </div>
       </div>
-    </section>
+    </>
   );
 };
 
