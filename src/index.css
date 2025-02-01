@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
 @theme {
+
+  --breakpoint-xl: 1440px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 375px;
+
+
      /* 🎨 Custom Colors from Your Palette */
   --color-primary: rgb(92, 74, 217); /* Bluish Purple */
-  --color-secondary: rgb(234, 134, 52); /* Yuzu Jam */
+  --color-secondary: rgb(242, 141, 53); /* Yuzu Jam */
   --color-analogous-1: rgb(119, 89, 237); /* Ice Ice Baby */
   --color-analogous-2: rgb(85, 80, 218); /* Rich Blue */
   --color-triadic: rgb(104, 49, 235); /* Electric Indigo */
