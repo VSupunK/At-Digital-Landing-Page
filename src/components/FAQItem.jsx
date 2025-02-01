@@ -4,7 +4,7 @@ const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border border-dashed border-primary p-4 my-4 rounded-md">
+    <div className="border border-dashed bg-accent-white border-primary p-4 my-4 rounded-md">
       <div
         className={`flex justify-between items-center font-semibold transition-colors cursor-pointer ${
           isOpen ? "text-primary" : "text-black"

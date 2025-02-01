@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/images/Hero image.jpeg";
 import Button from "./Button";
+import HeroContent from "./HeroContent";
 
 const HeroSection = () => {
   return (
@@ -15,15 +16,8 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Content */}
-      <div
-        className="relative max-w-3xl p-6 md:px-12 bg-gradient-to-r from-[#1E90FF] to-[#00C896] 
-                      text-white lg:absolute lg:bottom-12 lg:left-12"
-      >
-        <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
-          We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
-        </h1>
-
-        <Button />
+      <div className="relative w-full h-full flex items-center justify-center">
+        <HeroContent />
       </div>
     </section>
   );
