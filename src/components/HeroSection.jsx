@@ -5,7 +5,7 @@ import Button from "./Button";
 const HeroSection = () => {
   return (
     <>
-      <section id="home" className="relative w-full h-screen flex items-center">
+      <section id="hero" className="relative w-full h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img

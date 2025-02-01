@@ -6,13 +6,18 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-primary px-12 py-4 flex justify-between items-center text-white relative z-10">
+    <nav
+      id="home"
+      className="bg-primary px-12 py-4 flex justify-between items-center text-white relative z-10"
+    >
       {/* Logo */}
-      <img
-        src={Logo}
-        alt="logo"
-        className="w-[226px] h-[49.62px] cursor-pointer"
-      />
+      <a href="#home">
+        <img
+          src={Logo}
+          alt="logo"
+          className="w-[226px] h-[49.62px] cursor-pointer"
+        />
+      </a>
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex text-xl space-x-10 cursor-pointer uppercase">
